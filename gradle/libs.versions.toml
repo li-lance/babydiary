@@ -182,6 +182,8 @@ protobuf = { id = "com.google.protobuf", version.ref = "protobufPlugin" }
 roborazzi = { id = "io.github.takahirom.roborazzi", version.ref = "roborazzi" }
 room = { id = "androidx.room", version.ref = "room" }
 secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets" }
+#KMP
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 # Plugins defined by this project
 lance-android-application = { id = "lance.android.application" }
 lance-android-application-compose = { id = "lance.android.application.compose" }
@@ -197,3 +199,4 @@ lance-android-room = { id = "lance.android.room" }
 lance-android-test = { id = "lance.android.test" }
 lance-hilt = { id = "lance.hilt" }
 lance-jvm-library = { id = "lance.jvm.library" }
+lance-kotlin-multiplatform-library = { id = "lance.kotlin.multiplatform.library" }

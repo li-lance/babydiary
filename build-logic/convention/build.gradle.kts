@@ -95,5 +95,9 @@ gradlePlugin {
             id = libs.plugins.lance.jvm.library.get().pluginId
             implementationClass = "JvmLibraryConventionPlugin"
         }
+        register("kotlinMultiplatformLibrary") {
+            id = libs.plugins.lance.kotlin.multiplatform.library.get().pluginId
+            implementationClass = "KotlinMultiplatformLibraryConventionPlugin"
+        }
     }
 }
