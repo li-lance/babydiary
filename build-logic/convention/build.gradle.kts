@@ -22,6 +22,7 @@ dependencies {
     compileOnly(libs.android.gradlePlugin)
     compileOnly(libs.android.tools.common)
     compileOnly(libs.compose.gradlePlugin)
+    compileOnly(libs.openapi.generator.gradlePlugin)
     compileOnly(libs.firebase.crashlytics.gradlePlugin)
     compileOnly(libs.firebase.performance.gradlePlugin)
     compileOnly(libs.kotlin.gradlePlugin)
@@ -98,6 +99,10 @@ gradlePlugin {
         register("kotlinMultiplatformLibrary") {
             id = libs.plugins.lance.kotlin.multiplatform.library.get().pluginId
             implementationClass = "KotlinMultiplatformLibraryConventionPlugin"
+        }
+        register("openApiGenerator") {
+            id = libs.plugins.lance.openapi.generator.get().pluginId
+            implementationClass = "OpenApiGeneratorConventionPlugin"
         }
     }
 }

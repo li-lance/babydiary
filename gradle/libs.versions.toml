@@ -3,8 +3,8 @@ accompanist = "0.37.0"
 androidDesugarJdkLibs = "2.1.4"
 # AGP and tools should be updated together
 androidGradlePlugin = "8.9.1"
-androidTools = "31.9.0"
-androidxActivity = "1.9.3"
+androidTools = "31.9.1"
+androidxActivity = "1.10.1"
 androidxAppCompat = "1.7.0"
 androidxBrowser = "1.8.0"
 androidxComposeBom = "2025.02.00"
@@ -52,13 +52,15 @@ okhttp = "4.12.0"
 protobuf = "4.29.2"
 protobufPlugin = "0.9.4"
 retrofit = "2.11.0"
-retrofitKotlinxSerializationJson = "1.0.0"
 robolectric = "4.14.1"
 roborazzi = "1.39.0"
 room = "2.6.1"
 secrets = "2.0.1"
 truth = "1.4.4"
 turbine = "1.2.0"
+ktor = "3.1.2"
+openapi = "7.12.0"
+
 
 [bundles]
 androidx-compose-ui-test = ["androidx-compose-ui-test", "androidx-compose-ui-testManifest"]
@@ -110,6 +112,15 @@ androidx-tracing-ktx = { group = "androidx.tracing", name = "tracing-ktx", versi
 androidx-window-core = { group = "androidx.window", name = "window-core", version.ref = "androidxWindowManager" }
 androidx-work-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "androidxWork" }
 androidx-work-testing = { group = "androidx.work", name = "work-testing", version.ref = "androidxWork" }
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-json = { group = "io.ktor", name = "ktor-client-json", version.ref = "ktor" }
+ktor-client-logging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktor" }
+ktor-client-android = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktor" }
+ktor-client-ios = { group = "io.ktor", name = "ktor-client-ios", version.ref = "ktor" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-serialization-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
+
 coil-kt = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
 coil-kt-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 coil-kt-svg = { group = "io.coil-kt", name = "coil-svg", version.ref = "coil" }
@@ -161,6 +172,7 @@ firebase-performance-gradlePlugin = { group = "com.google.firebase", name = "per
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
 room-gradlePlugin = { group = "androidx.room", name = "room-gradle-plugin", version.ref = "room" }
+openapi-generator-gradlePlugin = { group = "org.openapitools", name = "openapi-generator-gradle-plugin", version.ref = "openapi" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
@@ -182,6 +194,8 @@ protobuf = { id = "com.google.protobuf", version.ref = "protobufPlugin" }
 roborazzi = { id = "io.github.takahirom.roborazzi", version.ref = "roborazzi" }
 room = { id = "androidx.room", version.ref = "room" }
 secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets" }
+openapi-generator = { id = "org.openapi.generator", version.ref = "openapi" }
+
 #KMP
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 # Plugins defined by this project
@@ -200,3 +214,4 @@ lance-android-test = { id = "lance.android.test" }
 lance-hilt = { id = "lance.hilt" }
 lance-jvm-library = { id = "lance.jvm.library" }
 lance-kotlin-multiplatform-library = { id = "lance.kotlin.multiplatform.library" }
+lance-openapi-generator = { id = "lance.openapi.generator" }

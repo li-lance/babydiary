@@ -14,6 +14,8 @@ android {
         applicationId = "com.lance.babydiary"
         versionCode = 8
         versionName = "0.1.2" // X.Y.Z; X = Major, Y = minor, Z = Patch level
+        compileSdk = 35
+        multiDexEnabled = true
     }
     packaging {
         resources {
