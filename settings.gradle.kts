@@ -21,9 +21,10 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "babydiary"
-include(":app")
+include(":apps:app")
 include(":shared")
-include(":backend")
+include(":utils")
+include(":core:permissions")
 check(JavaVersion.current().isCompatibleWith(JavaVersion.VERSION_17)) {
     """
     Now in Android requires JDK 17+ but it is currently using JDK ${JavaVersion.current()}.
