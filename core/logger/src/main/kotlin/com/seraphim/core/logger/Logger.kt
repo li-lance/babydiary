@@ -1,4 +1,4 @@
-package com.seraphim.babydiary
+package com.seraphim.core.logger
 
 import io.github.aakira.napier.Napier
 

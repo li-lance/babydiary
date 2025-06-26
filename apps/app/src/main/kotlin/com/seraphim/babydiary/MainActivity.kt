@@ -4,17 +4,16 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.navigation.compose.rememberNavController
-import io.github.aakira.napier.Napier
+import com.seraphim.babydiary.ui.theme.BabydiaryTheme
 
-class MainActivity: ComponentActivity() {
+class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContent {
-//            val navController = rememberNavController()
+            BabydiaryTheme {
+                MainScreen()
+            }
         }
-        Logger.e("MainActivity onCreate")
-        Napier.e { "Napier MainActivity onCreate" }
     }
 }

@@ -39,6 +39,7 @@ kotlin {
         }
         androidMain.dependencies {
             implementation(libs.ktor.client.okhttp)
+            implementation(project(":core:logger"))
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.ios)

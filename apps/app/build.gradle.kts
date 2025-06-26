@@ -32,8 +32,9 @@ android {
     }
 }
 dependencies {
+    implementation(project(":core:logger"))
     implementation(project(":core:permissions"))
-//    implementation(project(":shared"))
+    implementation(project(":shared"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material3)
@@ -51,13 +52,13 @@ dependencies {
     implementation(libs.androidx.paging.compose)
     implementation(libs.logback.android)
     implementation(libs.slf4j.api)
-    implementation(libs.destinations.core)
     implementation(libs.androidx.palette.ktx)
-    ksp(libs.destinations.ksp)
-    implementation(libs.destinations.bottom.sheet)
     implementation(libs.process.phoenix)
     implementation(libs.napier.loggger)
     implementation(libs.mmkv.kotlin)
+    implementation(libs.androidx.navigation3.runtime)
+    implementation(libs.androidx.navigation3.ui)
+    implementation(libs.androidx.lifecycle.viewmodel.navigation3)
 }
 baselineProfile {
     // Don't build on every iteration of a full assemble.
