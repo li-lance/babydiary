@@ -37,5 +37,5 @@ plugins {
     alias(libs.plugins.room) apply false
     alias(libs.plugins.openapi.generator) apply false
     alias(libs.plugins.module.graph) apply true // Plugin applied to allow module graph generation
-    alias(libs.plugins.spring.boot) apply false
+//    alias(libs.plugins.spring.boot) apply false
 }

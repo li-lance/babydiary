@@ -7,7 +7,7 @@ plugins {
 //    alias(libs.plugins.skie)
 }
 android {
-    namespace = "com.seraphim.music.shared"
+    namespace = "com.seraphim.babydiary.shared"
     compileSdk = project.findProperty("compileSdk")?.toString()?.toInt()
 }
 kotlin {
@@ -18,7 +18,7 @@ kotlin {
         }
         commonMain {
             dependencies {
-                implementation(project(":utils"))
+//                implementation(project(":utils"))
                 implementation(libs.kotlinx.coroutines.core)
                 implementation(libs.kotlinx.datetime)
                 implementation(libs.kotlinx.serialization.json)

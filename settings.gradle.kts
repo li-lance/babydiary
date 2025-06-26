@@ -24,7 +24,7 @@ rootProject.name = "babydiary"
 include(":apps:app")
 include(":shared")
 include(":utils")
-include(":core:permissions")
+include(":core:permissions","core:network-ktor")
 check(JavaVersion.current().isCompatibleWith(JavaVersion.VERSION_17)) {
     """
     Now in Android requires JDK 17+ but it is currently using JDK ${JavaVersion.current()}.
