@@ -1,4 +1,6 @@
 package com.seraphim.babydiary.domain.route
 
-data object LoginRoute
-data object GuideRoute
+data object RouteLogin
+data object RouteGuide
+data object RouteMainTabs
+data object RouteMain

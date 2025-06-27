@@ -12,7 +12,7 @@ import androidx.compose.ui.platform.LocalContext
 import org.koin.compose.KoinContext
 
 private val DarkColorScheme = darkColorScheme(
-//    primary = RED,
+    primary = Primary,
 //    secondary = PurpleGrey80,
 //    tertiary = Pink80,
 //    surface = BLACK,
@@ -22,7 +22,7 @@ private val DarkColorScheme = darkColorScheme(
 )
 
 private val LightColorScheme = lightColorScheme(
-//    primary = RED,
+    primary = Primary,
 //    secondary = PurpleGrey40,
 //    tertiary = Pink40,
 //    surface = WHITE,

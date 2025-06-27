@@ -32,8 +32,11 @@ android {
     }
 }
 dependencies {
+    implementation(project(":core:ui"))
     implementation(project(":core:logger"))
     implementation(project(":core:permissions"))
+    implementation(project(":core:mmkv"))
+    implementation(project(":domain:route"))
     implementation(project(":shared"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)

@@ -6,6 +6,7 @@ android {
     namespace = "com.seraphim.core.ui"
 }
 dependencies {
+    implementation(libs.androidx.core.ktx)
     implementation(libs.napier.loggger)
     implementation(libs.androidx.navigation3.runtime)
     implementation(libs.androidx.navigation3.ui)

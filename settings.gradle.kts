@@ -24,7 +24,7 @@ rootProject.name = "babydiary"
 include(":apps:app")
 include(":shared")
 include(":utils")
-include(":core:permissions","core:network-ktor","core:logger","core:ui")
+include(":core:permissions","core:network-ktor","core:logger","core:ui","core:mmkv")
 include(":domain:route")
 check(JavaVersion.current().isCompatibleWith(JavaVersion.VERSION_17)) {
     """
