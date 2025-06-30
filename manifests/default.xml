@@ -11,4 +11,5 @@
     <project name="utils.git" path="utils" revision="master"/>
     <project name="permissions.git" path="core/permissions" revision="master" />
     <project name="network-ktor.git" path="core/network-ktor" revision="master" />
+    <project name="mmkv.git" path="core/mmkv" revision="master" />
 </manifest>
